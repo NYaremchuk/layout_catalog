@@ -2,6 +2,7 @@
 @import "./extends";
 
 .card {
+  padding-top: 17px;
   display: flex;
   flex-direction: column;
   width: $base-card-width;
@@ -10,8 +11,16 @@
 
   &__picture {
     width: 160px;
-    height: 134px;
-    margin: 32px 20px 40px 19px;
+    height: 149px;
+    margin: 0 19px;
+    padding-top: 15px;
+
+    transition: transform 400ms linear;
+  }
+
+  &__picture:hover {
+    transform: scale(1.25);
+    border: 3px solid $card-border-color;
   }
 
   &__description {
@@ -20,6 +29,7 @@
     line-height: 18px;
     padding: 0 15px 4px 16px;
     color: $dark-color-for-text;
+    margin-top: 40px;
   }
 
   &__product-code {
@@ -95,6 +105,8 @@
     background: $special-blue;
     border: 1px solid $special-blue;
     border-radius: 5px;
+
+    transition: 400ms linear;
   }
 
   &__button-text {
@@ -111,6 +123,8 @@
     line-height: 16px;
     text-transform: uppercase;
     color: $button-buy-text-color;
+
+    transition: 400ms linear;
   }
 
   .card__button-border--active:hover,
