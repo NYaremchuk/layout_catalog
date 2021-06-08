@@ -1,11 +1,10 @@
 @import "./variables";
 
 .page-cards {
-  display: flex;
-  max-width: $displey-width;
-  justify-content: space-between;
-  margin: auto;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 2px 48px;
+  justify-content: center;
 
   &__container {
     margin-top: 50px;

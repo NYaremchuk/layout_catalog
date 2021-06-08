@@ -23,6 +23,8 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 60px;
+
+    transition: color 400ms linear;
   }
   
   &__link:hover {
